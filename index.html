@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANMOHAK.SHOP</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #6a5cff, #8e7bff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            width: 100%;
+            max-width: 420px;
+            border-radius: 22px;
+            padding: 30px 22px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .profile-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 4px solid #eee;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+        }
+
+        .stat-box {
+            background: #f5f7ff;
+            width: 30%;
+            padding: 15px 5px;
+            border-radius: 14px;
+        }
+
+        .stat-box h2 {
+            color: #6a5cff;
+            font-size: 22px;
+            margin-bottom: 4px;
+        }
+
+        .stat-box p {
+            font-size: 12px;
+            color: #555;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #2f2f2f;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 14px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #000;
+            transform: translateY(-2px);
+        }
+
+        .features {
+            text-align: left;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .feature:last-child {
+            border-bottom: none;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #6a5cff, #8e7bff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .feature span {
+            font-size: 15px;
+            color: #333;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+
+        <!-- Profile Image (Google Drive Direct Link) -->
+        <img 
+          src="https://drive.google.com/uc?export=view&id=1KqXEv6ppp5Sww4fhmLyYT4ElutUuu75l" 
+          alt="Profile" 
+          class="profile-img"
+        >
+
+        <!-- Website Name -->
+        <h1>MANMOHAK.SHOP</h1>
+
+        <!-- Description -->
+        <p class="subtitle">
+            Your gateway to premium video courses with lifetime access
+        </p>
+
+        <!-- Stats -->
+        <div class="stats">
+            <div class="stat-box">
+                <h2>4K+</h2>
+                <p>COURSES</p>
+            </div>
+            <div class="stat-box">
+                <h2>100+</h2>
+                <p>CATEGORIES</p>
+            </div>
+            <div class="stat-box">
+                <h2>∞</h2>
+                <p>ACCESS</p>
+            </div>
+        </div>
+
+        <!-- Telegram Button -->
+        <a href="http://t.me/Course_wale" target="_blank" class="btn">
+            <i class="fa-brands fa-telegram"></i>
+            Contact on Telegram
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <!-- Features -->
+        <div class="features">
+
+            <div class="feature">
+                <div class="icon"><i class="fa-solid fa-check"></i></div>
+                <span>High-quality video content</span>
+            </div>
+
+            <div class="feature">
+                <div class="icon"><i class="fa-solid fa-rotate"></i></div>
+                <span>Regular content updates</span>
+            </div>
+
+            <div class="feature">
+                <div class="icon"><i class="fa-solid fa-headset"></i></div>
+                <span>24/7 Support available</span>
+            </div>
+
+            <div class="feature">
+                <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <span>Learn at your own pace</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
