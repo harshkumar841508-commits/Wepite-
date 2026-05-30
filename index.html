@@ -1,685 +1,238 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANMOHAK.SHOP</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<title>MANMOHAK.SHOP | Premium Learning Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
 
-<meta name="description"
-content="Premium online learning platform with lifetime access.">
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #6a5cff, #8e7bff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
 
-<link rel="stylesheet" href="style.css">
+        .card {
+            background: #fff;
+            width: 100%;
+            max-width: 420px;
+            border-radius: 22px;
+            padding: 30px 22px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        .profile-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 4px solid #eee;
+            cursor: pointer;
+        }
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-rel="stylesheet">
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
 
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+        }
+
+        .stat-box {
+            background: #f5f7ff;
+            width: 30%;
+            padding: 15px 5px;
+            border-radius: 14px;
+        }
+
+        .stat-box h2 {
+            color: #6a5cff;
+            font-size: 22px;
+            margin-bottom: 4px;
+        }
+
+        .stat-box p {
+            font-size: 12px;
+            color: #555;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #2f2f2f;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 14px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #000;
+            transform: translateY(-2px);
+        }
+
+        .features {
+            text-align: left;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .feature:last-child {
+            border-bottom: none;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #6a5cff, #8e7bff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .feature span {
+            font-size: 15px;
+            color: #333;
+            font-weight: 500;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- PARTICLES -->
+    <div class="card">
 
-<div class="particle"></div>
-<div class="particle"></div>
-<div class="particle"></div>
-<div class="particle"></div>
+        <!-- CLICKABLE PROFILE IMAGE (REPLACED) -->
+        <a href="https://ibb.co/Y4YVV8dL" target="_blank">
+            <img 
+              src="https://i.ibb.co/Y4YVV8dL/IMG-20260131-201845.png"
+              alt="Profile"
+              class="profile-img"
+            >
+        </a>
 
-<!-- MAIN WRAPPER -->
+        <h1>MANMOHAK.SHOP</h1>
 
-<div class="container">
+        <p class="subtitle">
+            Your gateway to premium video courses with lifetime access
+        </p>
 
-<!-- NAVBAR -->
+        <div class="stats">
+            <div class="stat-box">
+                <h2>4K+</h2>
+                <p>COURSES</p>
+            </div>
+            <div class="stat-box">
+                <h2>100+</h2>
+                <p>CATEGORIES</p>
+            </div>
+            <div class="stat-box">
+                <h2>∞</h2>
+                <p>ACCESS</p>
+            </div>
+        </div>
 
-<nav class="navbar">
-
-<div class="logo">
-MANMOHAK<span>.SHOP</span>
-</div>
-
-<ul class="nav-links">
-
-<li><a href="#">Home</a></li>
-
-<li><a href="#">Courses</a></li>
-
-<li><a href="#">Features</a></li>
-
-<li><a href="#">FAQ</a></li>
-
-<li><a href="#">Contact</a></li>
-
-</ul>
-
-<a
-href="https://t.me/+u5GPZyB7kxdkYjZl"
-target="_blank"
-class="nav-btn">
-
-<i class="fa-brands fa-telegram"></i>
-
-Telegram
-
-</a>
-
-</nav>
-
-<!-- HERO -->
-
-<section class="hero">
-
-<div class="hero-left">
-
-<div class="profile-ring">
-
-<div class="profile-img">
-
-<img
-src="https://i.ibb.co/k6xyDf3s/file-00000000836c71f7945ee7e5ad5f6d2d.png"
-alt="MANMOHAK SHOP Logo">
-
-</div>
-
-<div class="verify">
-
-<i class="fa-solid fa-check"></i>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="hero-center">
-
-<div class="live-badge">
-
-<div class="live-dot"></div>
-
-Website Live
-
-</div>
-
-<h1>
-MANMOHAK<span>.SHOP</span>
-</h1>
-
-<p>
-
-Premium Courses • Instant Access •
-Lifetime Learning
-
-</p>
-
-<a
-href="https://t.me/+u5GPZyB7kxdkYjZl"
-target="_blank"
-class="hero-btn">
-
-<i class="fa-brands fa-telegram"></i>
-
-Contact On Telegram
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-<div class="support">
-
-🛡️ 24/7 Support • Instant Response
-
-</div>
-
-</div>
-
-<!-- STATS -->
-
-<div class="hero-right">
-
-<div class="stat-card">
-
-<i class="fa-solid fa-graduation-cap"></i>
-
-<div>
-
-<h2>4K+</h2>
-
-<p>Courses</p>
-
-</div>
-
-</div>
-
-<div class="stat-card">
-
+        <a href="https://t.me/+u5GPZyB7kxdkYjZl" target="_blank" class="btn">
+            <i class="fa-brands fa-telegram"></i>
+            Contact on Telegram
+          <a href="https://t.me/+ONIDF42un7gxMDg1" target="_blank" class="btn">
 <i class="fa-solid fa-layer-group"></i>
-
-<div>
-
-<h2>100+</h2>
-
-<p>Categories</p>
-
-</div>
-
-</div>
-
-<div class="stat-card">
-
-<i class="fa-solid fa-infinity"></i>
-
-<div>
-
-<h2>∞</h2>
-
-<p>Lifetime Access</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- SEARCH -->
-
-<section class="search-section">
-
-<div class="search-box">
-
-<input
-type="text"
-id="searchInput"
-placeholder="Search for courses...">
-
-<button>
-
-<i class="fa-solid fa-magnifying-glass"></i>
-
-Search
-
-</button>
-
-</div>
-
-</section>
-
-<!-- TRENDING TITLE -->
-
-<section class="section-title">
-
-🔥 Trending Courses
-
-</section>
-
-<!-- COURSES START -->
-
-<div class="courses-grid">
-  <!-- COURSE 1 -->
-
-<a href="#" class="course-card">
-
-<div class="course-left">
-
-<div class="course-icon purple">
-<i class="fa-solid fa-clock"></i>
-</div>
-
-<div>
-
-<h3>Dhruv Rathee Hindi Time Management Course</h3>
-
-<p>Productivity & Time Management</p>
-
-</div>
-
-</div>
-
+Dhruv Rathee All Courses
 <i class="fa-solid fa-arrow-right"></i>
-
 </a>
 
-<!-- COURSE 2 -->
-
-<a href="#" class="course-card">
-
-<div class="course-left">
-
-<div class="course-icon green">
-<i class="fa-solid fa-robot"></i>
-</div>
-
-<div>
-
-<h3>Dhruv Rathee ChatGPT Masterclass</h3>
-
-<p>AI & Productivity</p>
-
-</div>
-
-</div>
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-<!-- COURSE 3 -->
-
-<a href="#" class="course-card">
-
-<div class="course-left">
-
-<div class="course-icon red">
-<i class="fa-brands fa-youtube"></i>
-</div>
-
-<div>
-
-<h3>Dhruv Rathee YouTube Blueprint</h3>
-
-<p>YouTube Growth</p>
-
-</div>
-
-</div>
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-<!-- COURSE 4 -->
-
-<a href="#" class="course-card">
-
-<div class="course-left">
-
-<div class="course-icon blue">
-<i class="fa-solid fa-layer-group"></i>
-</div>
-
-<div>
-
-<h3>Dhruv Rathee All Courses</h3>
-
-<p>Complete Bundle</p>
-
-</div>
-
-</div>
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-<!-- COURSE 5 -->
-
-<a href="#" class="course-card">
-
-<div class="course-left">
-
-<div class="course-icon orange">
+<a href="https://t.me/+ONIDF42un7gxMDg1" target="_blank" class="btn">
 <i class="fa-brands fa-instagram"></i>
-</div>
-
-<div>
-
-<h3>Ankur Warikoo Instagram Course</h3>
-
-<p>Instagram Growth</p>
-
-</div>
-
-</div>
-
+Ankur Warikoo Instagram Course
 <i class="fa-solid fa-arrow-right"></i>
-
 </a>
 
-<!-- COURSE 6 -->
-
-<a href="#" class="course-card">
-
-<div class="course-left">
-
-<div class="course-icon blue">
+<a href="https://t.me/+ONIDF42un7gxMDg1" target="_blank" class="btn">
 <i class="fa-brands fa-linkedin"></i>
-</div>
-
-<div>
-
-<h3>Ankur Warikoo LinkedIn Course</h3>
-
-<p>Personal Branding</p>
-
-</div>
-
-</div>
-
+Ankur Warikoo LinkedIn Course
 <i class="fa-solid fa-arrow-right"></i>
-
 </a>
 
-<!-- COURSE 7 -->
-
-<a href="#" class="course-card">
-
-<div class="course-left">
-
-<div class="course-icon red">
+<a href="https://t.me/+ONIDF42un7gxMDg1" target="_blank" class="btn">
 <i class="fa-brands fa-youtube"></i>
-</div>
-
-<div>
-
-<h3>Ankur Warikoo YouTube Course</h3>
-
-<p>Content Creation</p>
-
-</div>
-
-</div>
-
+Ankur Warikoo YouTube Course
 <i class="fa-solid fa-arrow-right"></i>
-
 </a>
 
-<!-- COURSE 8 -->
-
-<a href="#" class="course-card">
-
-<div class="course-left">
-
-<div class="course-icon green">
+<a href="https://t.me/+ONIDF42un7gxMDg1" target="_blank" class="btn">
 <i class="fa-solid fa-money-bill-trend-up"></i>
-</div>
-
-<div>
-
-<h3>Take Charge Of Your Money</h3>
-
-<p>Finance & Wealth</p>
-
-</div>
-
-</div>
-
+Take Charge Of Your Money
 <i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-</div>
-
-<!-- VIEW ALL BUTTON -->
-
-<div class="view-all">
-
-<a href="#" class="view-btn">
-
-View All Courses
-
-</a>
-
-</div>
-
-<!-- WHY CHOOSE US -->
-
-<section class="why-section">
-
-<h2>
-⭐ Why Choose Us
-</h2>
-
-<div class="features-grid">
-
-<!-- FEATURE 1 -->
-
-<div class="feature-card">
-
-<i class="fa-solid fa-shield-halved"></i>
-
-<h3>Premium Content</h3>
-
-<p>
-High quality learning resources.
-</p>
-
-</div>
-
-<!-- FEATURE 2 -->
-
-<div class="feature-card">
-
-<i class="fa-solid fa-bolt"></i>
-
-<h3>Instant Access</h3>
-
-<p>
-Get access immediately.
-</p>
-
-</div>
-
-<!-- FEATURE 3 -->
-
-<div class="feature-card">
-
-<i class="fa-solid fa-infinity"></i>
-
-<h3>Lifetime Access</h3>
-
-<p>
-Learn anytime at your pace.
-</p>
-
-</div>
-
-<!-- FEATURE 4 -->
-
-<div class="feature-card">
-
-<i class="fa-solid fa-headset"></i>
-
-<h3>24/7 Support</h3>
-
-<p>
-Fast response support team.
-</p>
-
-</div>
-
-</div>
-
-  </section>
-  <!-- TESTIMONIALS -->
-
-<section class="testimonial-section">
-
-<h2>
-💬 What Our Students Say
-</h2>
-
-<div class="testimonial-grid">
-
-<div class="testimonial-card">
-
-<div class="quote">
-★★★★★
-</div>
-
-<p>
-Amazing learning experience. Everything was easy to understand.
-</p>
-
-<h4>Rahul Sharma</h4>
-
-</div>
-
-<div class="testimonial-card">
-
-<div class="quote">
-★★★★★
-</div>
-
-<p>
-Best platform for learning new skills. Lifetime access is a huge plus.
-</p>
-
-<h4>Priya Verma</h4>
-
-</div>
-
-<div class="testimonial-card">
-
-<div class="quote">
-★★★★★
-</div>
-
-<p>
-Support is very fast and helpful. Highly recommended.
-</p>
-
-<h4>Amit Patel</h4>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FAQ -->
-
-<section class="faq-section">
-
-<h2>
-❓ Frequently Asked Questions
-</h2>
-
-<div class="faq">
-
-<button class="faq-btn">
-How will I get access to the courses?
-</button>
-
-<div class="faq-content">
-<p>
-Access details are shared after successful confirmation.
-</p>
-</div>
-
-</div>
-
-<div class="faq">
-
-<button class="faq-btn">
-How long do I have access?
-</button>
-
-<div class="faq-content">
-<p>
-You get lifetime access to available content.
-</p>
-</div>
-
-</div>
-
-<div class="faq">
-
-<button class="faq-btn">
-Can I contact support anytime?
-</button>
-
-<div class="faq-content">
-<p>
-Yes, support is available whenever assistance is needed.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- ABOUT -->
-
-<section class="about-section">
-
-<h2>
-About MANMOHAK.SHOP
-</h2>
-
-<p>
-MANMOHAK.SHOP is an online learning platform focused on educational resources,
-tutorials, productivity content and skill development materials.
-</p>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer class="footer">
-
-<div class="footer-logo">
-
-MANMOHAK<span>.SHOP</span>
-
-</div>
-
-<p>
-Premium online learning platform.
-</p>
-
-<div class="footer-links">
-
-<a href="#">Home</a>
-
-<a href="#">Courses</a>
-
-<a href="#">Features</a>
-
-<a href="#">FAQ</a>
-
-<a href="#">Contact</a>
-
-</div>
-
-<div class="socials">
-
-<a href="#">
-<i class="fa-brands fa-telegram"></i>
-</a>
-
-<a href="#">
-<i class="fa-brands fa-instagram"></i>
-</a>
-
-<a href="#">
-<i class="fa-brands fa-youtube"></i>
-</a>
-
-</div>
-
-<p class="copyright">
-© 2026 MANMOHAK.SHOP • All Rights Reserved
-</p>
-
-</footer>
-
-<!-- SCROLL TO TOP -->
-
-<button id="scrollTop">
-
-<i class="fa-solid fa-arrow-up"></i>
-
-</button>
-
-</div>
-<!-- END CONTAINER -->
-
-<script src="script.js"></script>
+          </a>
+          
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <div class="features">
+            <div class="feature">
+                <div class="icon"><i class="fa-solid fa-check"></i></div>
+                <span>High-quality video content</span>
+            </div>
+
+            <div class="feature">
+                <div class="icon"><i class="fa-solid fa-rotate"></i></div>
+                <span>Regular content updates</span>
+            </div>
+
+            <div class="feature">
+                <div class="icon"><i class="fa-solid fa-headset"></i></div>
+                <span>24/7 Support available</span>
+            </div>
+
+            <div class="feature">
+                <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <span>Learn at your own pace</span>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 </html>
